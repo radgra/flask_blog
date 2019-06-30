@@ -1,0 +1,4 @@
+flask
+pip install Flask-SQLAlchemy
+pip install flask-restful
+pip install Flask-JWT
