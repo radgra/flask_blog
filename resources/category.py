@@ -8,8 +8,9 @@ class CategoryList(Resource):
     parser.add_argument('name', type=str, required=True, help="Field 'name' is required")
 
     def get(self):
-        categories = CategoryModel.query.all()
-        return {'data': [cat.json() for cat in categories]}
+        # categories = CategoryModel.query.all()
+        # return {'data': [cat.json() for cat in categories]}
+        return {"data":"works"}
 
     def post(self):
         data = self.parser.parse_args()
